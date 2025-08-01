@@ -13,7 +13,7 @@ const HeroSection = () => {
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-6">
               <h1 className="font-heading font-bold text-foreground leading-tight">
-                Empowering youth through opportunities that transform.
+                Empowering Youth Through Opportunities That Transform.
               </h1>
               <p className="text-xl text-body-text leading-relaxed max-w-lg">
                 We connect young people, especially those often excluded to the tools, pathways, and support they need to thrive, lead, and shape the future.
