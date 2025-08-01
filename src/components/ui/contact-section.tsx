@@ -22,12 +22,6 @@ const ContactSection = () => {
       description: "Get in touch with our team"
     },
     {
-      icon: MapPin,
-      title: "Visit Us",
-      details: "Lagos, Nigeria",
-      description: "Connect with us locally"
-    },
-    {
       icon: Clock,
       title: "Response Time",
       details: "Within 24 hours",
@@ -38,10 +32,17 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simulate form submission
+    // Create mailto link with form data
+    const subject = encodeURIComponent('Contact Form Submission');
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:youthxcelteam@gmail.com?subject=${subject}&body=${body}`;
+    
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
+      title: "Redirecting to email client",
+      description: "Your default email client will open with the message.",
     });
     
     // Reset form
@@ -64,7 +65,7 @@ const ContactSection = () => {
             Get in Touch
           </h2>
           <p className="text-xl text-body-text leading-relaxed">
-            Ready to start your journey with YouthXcel? We'd love to hear from you and help you find the perfect opportunity.
+            Youth are not just the future, they're shaping the present. We're here to stand with them until access is no longer a privilege.
           </p>
         </div>
 
@@ -172,14 +173,16 @@ const ContactSection = () => {
             <Card className="bg-gradient-card border-0 shadow-card">
               <CardContent className="p-6">
                 <h4 className="font-heading font-semibold text-xl text-foreground mb-3">
-                  Ready to Join Our Community?
+                  Ready to get involved?
                 </h4>
-                <p className="text-body-text mb-4">
-                  Don't wait! Your journey to success starts with a single step.
-                </p>
-                <Button className="bg-gradient-primary hover:opacity-90 font-body font-semibold">
-                  Join YouthXcel Today
-                </Button>
+                <div className="flex flex-col gap-3">
+                  <Button className="bg-gradient-primary hover:opacity-90 font-body font-semibold w-full">
+                    Support Our Work
+                  </Button>
+                  <Button variant="outline" className="font-body font-semibold w-full">
+                    See Opportunities for Youth
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
