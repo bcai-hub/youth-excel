@@ -207,7 +207,7 @@ const Solutions = () => {
                   <div className="flex items-center justify-center w-16 h-16 bg-gradient-primary rounded-full mx-auto mb-4">
                     <Globe className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-3xl font-bold text-primary mb-2">12+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">6+</div>
                   <div className="text-sm text-muted-foreground mb-2">States Reached</div>
                   <p className="text-xs text-muted-foreground">
                     Through pilot programs and opportunity referrals
