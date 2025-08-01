@@ -57,7 +57,7 @@ const HeroSection = () => {
                 <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-2">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <p className="font-heading font-bold text-2xl text-foreground">12+</p>
+                <p className="font-heading font-bold text-2xl text-foreground">6+</p>
                 <p className="text-sm text-body-text">States Reached</p>
               </div>
               <div className="text-center">
