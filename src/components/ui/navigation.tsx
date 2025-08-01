@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { 
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,11 +15,16 @@ const Navigation = () => {
   
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
     { href: '/solutions', label: 'Solutions' },
     { href: '/projects', label: 'Projects' },
     { href: '/stories', label: 'Stories' },
     { href: '/resources', label: 'Resources' }
+  ];
+
+  const aboutDropdownItems = [
+    { href: '/who-we-are', label: 'Who We Are' },
+    { href: '/our-approach', label: 'Our Approach' },
+    { href: '/our-team', label: 'Our Team' }
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -47,6 +58,30 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
+            
+            {/* About Us Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className={`flex items-center gap-1 font-body font-medium transition-colors duration-200 ${
+                location.pathname.includes('/about')
+                  ? 'text-transparent bg-gradient-primary bg-clip-text'
+                  : 'text-body-text hover:text-primary'
+              }`}>
+                About Us
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-white border border-border shadow-card z-50">
+                {aboutDropdownItems.map((item) => (
+                  <DropdownMenuItem key={item.href} asChild>
+                    <Link 
+                      to={item.href}
+                      className="font-body font-medium text-body-text hover:text-primary w-full"
+                    >
+                      {item.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* CTA Buttons */}
@@ -94,6 +129,22 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
+              
+              {/* About Us Mobile Section */}
+              <div className="border-t border-border pt-2 mt-2">
+                <div className="px-3 py-2 text-sm font-medium text-muted-foreground">About Us</div>
+                {aboutDropdownItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="block px-6 py-2 rounded-md font-body font-medium text-body-text hover:text-primary transition-colors duration-200"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+              
               <div className="pt-4 space-y-2">
                 <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                   <Button variant="outline" className="w-full font-body font-medium">
