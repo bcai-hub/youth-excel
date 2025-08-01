@@ -9,7 +9,10 @@ import {
   Heart, 
   BookOpen, 
   Lightbulb,
-  ArrowRight
+  ArrowRight,
+  Linkedin,
+  Twitter,
+  Instagram
 } from "lucide-react";
 
 const About = () => {
@@ -17,7 +20,7 @@ const About = () => {
     {
       icon: Target,
       title: "Access & Equity",
-      description: "We believe that opportunity should not be a privilege. We design our work to reach young people who are most often excluded, especially those in underserved, rural, or low-income communities."
+      description: "We believe that opportunity should not be a privilege. We design our work to reach young people who are most often excluded, especially those in underserved, rural, or low-income communities, so they can access the same doors others walk through every day."
     },
     {
       icon: Users,
@@ -46,6 +49,42 @@ const About = () => {
     }
   ];
 
+  const teamMembers = [
+    {
+      name: "Alex Johnson",
+      role: "Executive Director",
+      image: "/lovable-uploads/4d7acd13-e7df-4457-9424-744ebc78df35.png",
+      bio: "Passionate youth advocate with 8+ years in community development",
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        instagram: "#"
+      }
+    },
+    {
+      name: "Sarah Okafor",
+      role: "Program Manager",
+      image: "/lovable-uploads/a9dd3084-b7af-4ebe-825f-6acbc3c6adcd.png",
+      bio: "Expert in skills development and rural community engagement",
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        instagram: "#"
+      }
+    },
+    {
+      name: "Michael Chen",
+      role: "Technology Lead",
+      image: "/lovable-uploads/4d7acd13-e7df-4457-9424-744ebc78df35.png",
+      bio: "Building digital solutions for youth empowerment and career guidance",
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        instagram: "#"
+      }
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -66,7 +105,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Main Story */}
+      {/* Who We Are */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -80,21 +119,25 @@ const About = () => {
                   Born from a deep understanding of the inequalities young people face, particularly in Africa 
                   and underserved communities, YouthXcel exists to close the gap between potential and access. 
                   We believe that young people already have the ideas, energy, and drive to shape a better world, 
-                  they just need the support to get there.
+                  they just need the support to get there. That's where we come in.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  That's where we come in. What drives us is simple but urgent: too many young people with 
-                  incredible promise are being left behind.
+                  What drives us is simple but urgent: too many young people with incredible promise are being left behind. 
+                  At YouthXcel, we are changing that by building intentional programs, partnerships, and platforms that 
+                  place youth at the center and empower them with tools that unlock their agency, confidence, and voice. 
+                  Our work is rooted in community, equity, and the belief that access to opportunity should never be a privilege.
                 </p>
               </div>
               <Card className="bg-gradient-card border-0 shadow-glow">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">Our Driving Force</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    At YouthXcel, we are changing that by building intentional programs, partnerships, 
-                    and platforms that place youth at the center and empower them with tools that unlock 
-                    their agency, confidence, and voice. Our work is rooted in community, equity, and the 
-                    belief that access to opportunity should never be a privilege.
+                  <img 
+                    src="/lovable-uploads/a9dd3084-b7af-4ebe-825f-6acbc3c6adcd.png" 
+                    alt="Youth community activities" 
+                    className="w-full h-64 object-cover rounded-lg mb-4"
+                  />
+                  <h3 className="text-xl font-bold mb-2 text-foreground">Our Mission</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
+                    Empowering youth through intentional programs that unlock agency, confidence, and voice.
                   </p>
                 </CardContent>
               </Card>
@@ -137,9 +180,9 @@ const About = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-primary">Mission</h3>
                   <p className="text-foreground leading-relaxed">
-                    To empower young people, especially Africa's most marginalized, by connecting them to 
-                    opportunities, resources, and supported pathways that unlock their full potential, 
-                    elevate their agency, and equip them to thrive, lead, and create meaningful impact in the world.
+                    To empower young people, especially Africa's most marginalized, by building scalable solutions 
+                    and connecting them to opportunities, resources, and supported pathways that unlock their full 
+                    potential, elevate their agency, and equip them to thrive, lead, and create meaningful impact in the world.
                   </p>
                 </CardContent>
               </Card>
@@ -148,12 +191,12 @@ const About = () => {
         </div>
       </section>
 
-      {/* The Problem */}
+      {/* Our Why */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4 text-primary">
-              The Problem
+              Our Why
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               Millions of young people grow up 
@@ -170,14 +213,16 @@ const About = () => {
               Rural youth, girls, and those in low-income settings are most affected. Yet, these same young 
               people are also some of the most resilient, creative, and ready to lead, if given the chance. 
               At YouthXcel, we don't just see a generation in need, we see a generation of leaders, builders, 
-              and change-makers.
+              and change-makers. But without access, even the brightest minds can be dimmed by circumstance. 
+              That's why we focus on creating real access to tools, platforms, and spaces that youth can use 
+              to build their own path forward.
             </p>
           </div>
         </div>
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 bg-gradient-hero">
+      <section id="approach" className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4 text-primary">
@@ -220,7 +265,7 @@ const About = () => {
             </h2>
             <p className="text-lg text-muted-foreground">
               Our work is guided by key principles that reflect what we believe, how we operate, 
-              and what we prioritize.
+              and what we prioritize. These pillars help ensure everything we do is grounded, thoughtful, and built for impact.
             </p>
           </div>
 
@@ -245,41 +290,87 @@ const About = () => {
       </section>
 
       {/* Our Team */}
-      <section className="py-20 bg-gradient-hero">
+      <section id="team" className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-4 text-primary">
-              Our Team
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Youth-led</span> and youth-driven
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              YouthXcel is led by a passionate team of young professionals, mentors, and advocates who bring 
-              lived experience, technical knowledge, and a deep commitment to youth equity and transformation.
-            </p>
-            <div className="bg-white/80 backdrop-blur rounded-2xl p-8 text-left mb-8">
-              <p className="text-foreground leading-relaxed mb-4">
-                Though we are early in our journey, we are backed by a growing network of advisors, partners, 
-                and collaborators who believe in our mission and help us build responsibly.
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge variant="secondary" className="mb-4 text-primary">
+                Our Team
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">Youth-led</span> and youth-driven
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                YouthXcel is led by a passionate team of young professionals, mentors, and advocates who bring 
+                lived experience, technical knowledge, and a deep commitment to youth equity and transformation.
               </p>
-              <p className="text-foreground leading-relaxed">
-                At our core, we are youth-led and youth-driven. Every member of our team brings a personal 
-                understanding of what it means to grow up with potential but without access, and that insight 
-                shapes every decision we make.
-              </p>
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-8 text-left mb-12">
+                <p className="text-foreground leading-relaxed mb-4">
+                  Though we are early in our journey, we are backed by a growing network of advisors, partners, 
+                  and collaborators who believe in our mission and help us build responsibly.
+                </p>
+                <p className="text-foreground leading-relaxed">
+                  At our core, we are youth-led and youth-driven. Every member of our team brings a personal 
+                  understanding of what it means to grow up with potential but without access, and that insight 
+                  shapes every decision we make.
+                </p>
+              </div>
+            </div>
+
+            {/* Team Members */}
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {teamMembers.map((member, index) => (
+                <Card key={index} className="bg-white/80 backdrop-blur border-0 shadow-glow group hover:shadow-primary transition-all duration-300">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-24 h-24 mx-auto mb-4 relative">
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-full h-full object-cover rounded-full border-4 border-primary/20 group-hover:border-primary/40 transition-colors duration-300"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground mb-1">{member.name}</h3>
+                    <p className="text-primary font-medium mb-3">{member.role}</p>
+                    <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
+                    
+                    {/* Social Links */}
+                    <div className="flex justify-center space-x-3">
+                      <a 
+                        href={member.social.linkedin} 
+                        className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+                      >
+                        <Linkedin className="w-4 h-4" />
+                      </a>
+                      <a 
+                        href={member.social.twitter} 
+                        className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+                      >
+                        <Twitter className="w-4 h-4" />
+                      </a>
+                      <a 
+                        href={member.social.instagram} 
+                        className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+                      >
+                        <Instagram className="w-4 h-4" />
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
             
-            <Button 
-              size="lg" 
-              className="bg-gradient-primary border-0 hover:opacity-90 shadow-primary"
-              asChild
-            >
-              <Link to="/contact">
-                Join Our Mission
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="text-center">
+              <Button 
+                size="lg" 
+                className="bg-gradient-primary border-0 hover:opacity-90 shadow-primary"
+                asChild
+              >
+                <Link to="/contact">
+                  Join Our Mission
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
