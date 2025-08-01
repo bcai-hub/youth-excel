@@ -13,31 +13,40 @@ const HeroSection = () => {
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-6">
               <h1 className="font-heading font-bold text-foreground leading-tight">
-                Empowering the Next Generation
+                Empowering youth through opportunities that transform.
               </h1>
               <p className="text-xl text-body-text leading-relaxed max-w-lg">
-                YouthXcel connects youth with mentors, skills, and opportunities that transform lives and build futures.
+                We connect young people, especially those often excluded to the tools, pathways, and support they need to thrive, lead, and shape the future.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
+              <Link to="/solutions">
                 <Button 
                   size="lg" 
                   className="bg-gradient-primary hover:opacity-90 font-body font-semibold text-lg px-8 py-4 group"
                 >
-                  Join Us Now
+                  Explore Our Work
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Link to="/about">
+              <Link to="/contact">
                 <Button 
                   variant="outline" 
                   size="lg"
                   className="font-body font-semibold text-lg px-8 py-4 border-2"
                 >
-                  Learn More
+                  Partner With Us
+                </Button>
+              </Link>
+              <Link to="/solutions">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="font-body font-semibold text-lg px-8 py-4 border-2"
+                >
+                  Join a Program
                 </Button>
               </Link>
             </div>
@@ -48,22 +57,22 @@ const HeroSection = () => {
                 <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-2">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <p className="font-heading font-bold text-2xl text-foreground">500+</p>
-                <p className="text-sm text-body-text">Youth Empowered</p>
+                <p className="font-heading font-bold text-2xl text-foreground">12+</p>
+                <p className="text-sm text-body-text">States Reached</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-2">
                   <Target className="h-6 w-6 text-white" />
                 </div>
-                <p className="font-heading font-bold text-2xl text-foreground">100+</p>
-                <p className="text-sm text-body-text">Programs</p>
+                <p className="font-heading font-bold text-2xl text-foreground">3</p>
+                <p className="text-sm text-body-text">Core Programs</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-2">
                   <Lightbulb className="h-6 w-6 text-white" />
                 </div>
-                <p className="font-heading font-bold text-2xl text-foreground">50+</p>
-                <p className="text-sm text-body-text">Opportunities</p>
+                <p className="font-heading font-bold text-2xl text-foreground">30K</p>
+                <p className="text-sm text-body-text">Youth Goal by 2030</p>
               </div>
             </div>
           </div>
