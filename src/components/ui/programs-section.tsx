@@ -13,28 +13,22 @@ import { Button } from '@/components/ui/button';
 const ProgramsSection = () => {
   const programs = [
     {
-      icon: GraduationCap,
-      title: "Skill Training",
-      description: "Comprehensive training programs designed to equip youth with in-demand skills for the modern workforce.",
-      features: ["Technical Skills", "Digital Literacy", "Career Readiness"]
-    },
-    {
       icon: Users,
-      title: "Mentorship",
-      description: "Connect with experienced professionals who provide guidance, support, and career insights.",
-      features: ["1-on-1 Mentoring", "Group Sessions", "Industry Experts"]
+      title: "YouthXChange",
+      description: "YouthXChange bridges the gap between urban/university talent and resources and underserved communities by connecting university students and recent graduates with rural communities through a dynamic exchange of knowledge and delivery of hands-on, locally relevant skills training. Focused on green entrepreneurship, basic digital fluency, and financial literacy, skills aligned with community needs and tailored to local economies, it unlocks practical pathways to opportunity and income.",
+      features: ["Green Entrepreneurship", "Digital Fluency", "Financial Literacy"]
     },
     {
       icon: Lightbulb,
-      title: "Innovation Challenges",
-      description: "Participate in real-world projects and competitions that foster creativity and problem-solving.",
-      features: ["Project-Based Learning", "Team Collaboration", "Real Solutions"]
+      title: "Youth In Scope",
+      description: "#YouthInScope is a storytelling and connection platform that shines a light on youth changemakers often excluded from mainstream narratives and communities where youth are most marginalized. Beyond recognition, each spotlight is followed by efforts to connect featured youth or communities with tailored opportunity leads, resources, and networks.",
+      features: ["Youth Stories", "Opportunity Leads", "Network Building"]
     },
     {
       icon: Target,
-      title: "Opportunities",
-      description: "Access to internships, scholarships, job placements, and entrepreneurship support.",
-      features: ["Job Placement", "Scholarships", "Startup Support"]
+      title: "Vidi Youth AI",
+      description: "Vidi Youth AI is a digital career support tool built around clarity and meaning. It helps young people discover their purpose, align their strengths and interests, and navigate personalized pathways toward learning, work, or income opportunities. [Coming Soon]",
+      features: ["Career Discovery", "Personalized Pathways", "Purpose Alignment"]
     }
   ];
 
@@ -44,15 +38,15 @@ const ProgramsSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-heading font-bold text-foreground mb-6">
-            Our Programs & Services
+            Our Work
           </h2>
           <p className="text-xl text-body-text leading-relaxed">
-            Discover how our comprehensive programs are designed to unlock potential and create pathways to success for every young person.
+            At YouthXcel, our work is built on a simple but powerful idea: that young people should have a real chance to succeed. We focus on bridging the gap between potential and opportunity by designing practical, relevant, and inclusive programs that support young people to grow, lead, and thrive.
           </p>
         </div>
 
         {/* Programs Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {programs.map((program, index) => {
             const IconComponent = program.icon;
             return (
