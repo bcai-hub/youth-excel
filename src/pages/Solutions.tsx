@@ -36,17 +36,19 @@ const Solutions = () => {
       name: "Youth In Scope",
       icon: Eye,
       status: "Active",
-      tagline: "Amplifying untold stories, creating real connections",
-      description: "#YouthInScope is a storytelling and connection platform that shines a light on youth changemakers often excluded from mainstream narratives and communities where youth are most marginalized.",
+      tagline: "Visibility that leads somewhere",
+      description: "#YouthInScope is a storytelling and connection platform that shines a light on youth changemakers often excluded from mainstream narratives and communities where youth are most marginalized. Beyond recognition, each spotlight connects featured youth with tailored opportunity leads, resources, and networks.",
       features: [
-        "Youth changemaker spotlights",
-        "Untold story amplification",
-        "Tailored opportunity leads",
-        "Resource connections",
-        "Network building",
-        "Community visibility"
+        "Spotlight youth changemakers",
+        "Focus on marginalized communities", 
+        "Story-to-opportunity pipeline",
+        "Tailored opportunity matching",
+        "Resource connection bridge",
+        "Network building support",
+        "Community amplification",
+        "Real access creation"
       ],
-      impact: "Beyond recognition, each spotlight is followed by efforts to connect featured youth with opportunities, resources, and networks.",
+      impact: "YouthInScope turns untold stories into bridges for real access, support, and possibility across overlooked communities, ensuring visibility leads to meaningful opportunities.",
       gradient: "from-primary-teal to-primary-blue"
     },
     {
