@@ -356,7 +356,7 @@ const Contact = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="bg-gradient-card border-0 shadow-glow">
                 <CardContent className="p-8 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">12+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">6+</div>
                   <div className="text-lg font-semibold text-foreground mb-2">States in Nigeria</div>
                   <p className="text-sm text-muted-foreground">
                     Active programs and partnerships across Nigeria
