@@ -12,13 +12,13 @@ const ImpactSection = () => {
     },
     {
       icon: Award,
-      number: "150+",
+      number: "30+",
       label: "Success Stories",
       description: "Young people achieving their goals"
     },
     {
       icon: Star,
-      number: "50+",
+      number: "10+",
       label: "Partner Organizations",
       description: "Collaborating for greater impact"
     }
