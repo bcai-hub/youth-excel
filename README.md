@@ -1,73 +1,34 @@
-# Welcome to your Lovable project
+# youth-excel Project Overview
 
-## Project info
+This is a modern web application built with cutting-edge tools and best practices in frontend development. The project is optimized for speed, scalability, and user experience.
 
-**URL**: https://lovable.dev/projects/6c6ff6e0-ed3d-405b-bcb5-533d39cf6e65
+#
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+This project was developed using the following technologies:
 
-**Use Lovable**
+- ⚡ **Vite** – Fast build tool and development server
+- 🟦 **TypeScript** – Strongly typed JavaScript
+- ⚛️ **React** – Component-based frontend framework
+- 🎨 **shadcn/ui** – Accessible and customizable component library
+- 💨 **Tailwind CSS** – Utility-first CSS framework
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6c6ff6e0-ed3d-405b-bcb5-533d39cf6e65) and start prompting.
+## Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- Fully responsive design
+- Reusable and accessible UI components
+- Fast development and optimized build
+- Clean and maintainable codebase
 
-**Use your preferred IDE**
+## Credits
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Project Author**  
+**Harisu Abdulkadir Sulaiman**  
+📞 09073733790 / 09166358735  
+📧 hareesabdulkadir  
+🤝 In collaboration with **Outside Lab**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6c6ff6e0-ed3d-405b-bcb5-533d39cf6e65) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+© 2025. All rights reserved.
