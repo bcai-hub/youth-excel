@@ -26,7 +26,7 @@ This project was developed using the following technologies:
 **Project Author**  
 **Harisu Abdulkadir Sulaiman**  
 📞 09073733790 / 09166358735  
-📧 hareesabdulkadir  
+📧 hareesabdulkadir@gmail.com
 🤝 In collaboration with **Outside Lab**
 
 ---
