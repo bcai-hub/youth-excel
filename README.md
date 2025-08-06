@@ -1,6 +1,6 @@
 # youth-excel Project Overview
 
-This is a modern web application built with cutting-edge tools and best practices in frontend development. The project is optimized for speed, scalability, and user experience.
+This is a modern web application for youth-excel built with cutting-edge tools and best practices in frontend development. The project is optimized for speed, scalability, and user experience.
 
 #
 
