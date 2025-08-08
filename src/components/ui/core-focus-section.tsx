@@ -68,8 +68,12 @@ const CoreFocusSection = () => {
               >
                 <CardContent className="p-8">
                   {/* Icon */}
-                  <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="h-8 w-8 text-white" />
+                  <div className="relative w-20 h-20 mb-6 group-hover:scale-110 transition-all duration-500">
+                    <div className="absolute inset-0 bg-gradient-primary rounded-3xl shadow-elegant blur-md"></div>
+                    <div className="relative w-full h-full bg-gradient-primary rounded-3xl flex items-center justify-center shadow-primary border border-white/30">
+                      <IconComponent className="h-10 w-10 text-white drop-shadow-lg filter" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent rounded-3xl"></div>
+                    </div>
                   </div>
                   
                   {/* Content */}
