@@ -1,10 +1,8 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, TrendingUp, Target, Calendar } from 'lucide-react';
-
 const ReachImpactSection = () => {
-  return (
-    <section className="py-section bg-accent-soft-gray">
+  return <section className="py-section bg-accent-soft-gray">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -23,7 +21,7 @@ const ReachImpactSection = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <MapPin className="h-8 w-8 text-white" />
               </div>
-              <h3 className="font-heading font-bold text-3xl text-foreground mb-2">12+</h3>
+              <h3 className="font-heading font-bold text-3xl text-foreground mb-2">6+</h3>
               <p className="text-body-text font-medium">States Reached</p>
               <p className="text-sm text-body-text mt-2">Across Nigeria</p>
             </CardContent>
@@ -91,8 +89,6 @@ const ReachImpactSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ReachImpactSection;
