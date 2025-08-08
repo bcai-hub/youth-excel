@@ -1,19 +1,27 @@
 import { Card, CardContent } from "./card";
 import { Badge } from "./badge";
-import { Users, Globe, Heart } from "lucide-react";
-
+import { Users, Globe, Heart, Briefcase, Wrench, Megaphone, TrendingUp } from "lucide-react";
 const IntroSection = () => {
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <Badge variant="secondary" className="mb-4 text-primary">
-            Who We Are
-          </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Unlocking potential through 
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> equitable access</span>
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="relative inline-block mb-8 bg-cyan-400">
+            <Badge variant="secondary" className="text-primary text-xl px-8 py-3 shadow-elegant border-primary/20 backdrop-blur-sm bg-slate-950">
+              Who We Are
+            </Badge>
+            <div className="absolute inset-0 bg-gradient-primary/20 blur-2xl rounded-full -z-10 scale-125"></div>
+          </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <span className="relative">
+              Unlocking potential through
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary-glow/10 to-secondary/10 blur-2xl -z-10"></div>
+            </span>
+            <br />
+            <span className="bg-gradient-to-r from-primary via-primary-glow to-secondary bg-clip-text relative text-cyan-500">
+              equitable access
+              <div className="absolute inset-0 bg-gradient-primary/30 blur-3xl -z-10 scale-110"></div>
+            </span>
           </h2>
         </div>
 
@@ -88,28 +96,48 @@ const IntroSection = () => {
             
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div className="bg-white/80 backdrop-blur rounded-xl p-6">
-                <h4 className="font-semibold text-primary mb-3">🔗 Real Opportunities</h4>
+                <div className="flex items-center mb-3">
+                  <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center mr-3">
+                    <Briefcase className="h-4 w-4 text-white" />
+                  </div>
+                  <h4 className="font-semibold text-primary">Real Opportunities</h4>
+                </div>
                 <p className="text-sm text-muted-foreground">
                   We link them to real opportunities that open doors.
                 </p>
               </div>
               
               <div className="bg-white/80 backdrop-blur rounded-xl p-6">
-                <h4 className="font-semibold text-primary mb-3">🛠️ Real Skills</h4>
+                <div className="flex items-center mb-3">
+                  <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center mr-3">
+                    <Wrench className="h-4 w-4 text-white" />
+                  </div>
+                  <h4 className="font-semibold text-primary">Real Skills</h4>
+                </div>
                 <p className="text-sm text-muted-foreground">
                   We connect them to pathways to gain real skills to prepare for life and dignified work.
                 </p>
               </div>
               
               <div className="bg-white/80 backdrop-blur rounded-xl p-6">
-                <h4 className="font-semibold text-primary mb-3">📢 Platforms to Share</h4>
+                <div className="flex items-center mb-3">
+                  <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center mr-3">
+                    <Megaphone className="h-4 w-4 text-white" />
+                  </div>
+                  <h4 className="font-semibold text-primary">Platforms to Share</h4>
+                </div>
                 <p className="text-sm text-muted-foreground">
                   We offer platforms to share their ideas, change-making journeys and lived experiences.
                 </p>
               </div>
               
               <div className="bg-white/80 backdrop-blur rounded-xl p-6">
-                <h4 className="font-semibold text-primary mb-3">🚀 Leadership Growth</h4>
+                <div className="flex items-center mb-3">
+                  <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center mr-3">
+                    <TrendingUp className="h-4 w-4 text-white" />
+                  </div>
+                  <h4 className="font-semibold text-primary">Leadership Growth</h4>
+                </div>
                 <p className="text-sm text-muted-foreground">
                   We provide the tools and support to grow their leadership and confidence.
                 </p>
@@ -118,8 +146,6 @@ const IntroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default IntroSection;
