@@ -10,8 +10,8 @@ const VisionMissionSection = () => {
           {/* Vision */}
           <Card className="bg-gradient-card border-0 shadow-card">
             <CardContent className="p-10 text-center">
-              <div className="w-20 h-20 bg-gradient-primary rounded-3xl flex items-center justify-center mx-auto mb-8">
-                <Eye className="h-10 w-10 text-white" />
+              <div className="w-24 h-24 bg-gradient-to-br from-blue-500 via-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
+                <Eye className="h-12 w-12 text-white drop-shadow-sm" />
               </div>
               <h2 className="font-heading font-bold text-3xl text-foreground mb-6">
                 Our Vision
@@ -25,8 +25,8 @@ const VisionMissionSection = () => {
           {/* Mission */}
           <Card className="bg-gradient-card border-0 shadow-card">
             <CardContent className="p-10 text-center">
-              <div className="w-20 h-20 bg-gradient-primary rounded-3xl flex items-center justify-center mx-auto mb-8">
-                <Target className="h-10 w-10 text-white" />
+              <div className="w-24 h-24 bg-gradient-to-br from-green-500 via-emerald-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
+                <Target className="h-12 w-12 text-white drop-shadow-sm" />
               </div>
               <h2 className="font-heading font-bold text-3xl text-foreground mb-6">
                 Our Mission
