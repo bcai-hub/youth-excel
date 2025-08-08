@@ -18,13 +18,12 @@ const Index = () => {
       <IntroSection />
       <WhyWeExistSection />
       <CoreFocusSection />
-      <VisionMissionSection />
-      <ProblemApproachSection />
-      <CorePillarsSection />
-      <ProgramsSection />
-      <ReachImpactSection />
-      <ImpactSection />
-      <ContactSection />
+      <div className="py-8 space-y-6">
+        <VisionMissionSection />
+        <ProgramsSection />
+        <ReachImpactSection />
+        <ContactSection />
+      </div>
     </div>
   );
 };
