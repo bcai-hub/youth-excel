@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { 
-  GraduationCap, 
-  Users, 
-  Lightbulb, 
-  Target,
+  Network, 
+  Camera, 
+  BrainCircuit, 
+  Briefcase,
   ArrowRight 
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -13,19 +13,19 @@ import { Button } from '@/components/ui/button';
 const ProgramsSection = () => {
   const programs = [
     {
-      icon: Users,
+      icon: Network,
       title: "YouthXChange",
       description: "YouthXChange bridges the gap between urban/university talent and resources and underserved communities by connecting university students and recent graduates with rural communities through a dynamic exchange of knowledge and delivery of hands-on, locally relevant skills training. Focused on green entrepreneurship, basic digital fluency, and financial literacy, skills aligned with community needs and tailored to local economies, it unlocks practical pathways to opportunity and income.",
       features: ["Green Entrepreneurship", "Digital Fluency", "Financial Literacy"]
     },
     {
-      icon: Lightbulb,
+      icon: Camera,
       title: "Youth In Scope",
       description: "#YouthInScope is a storytelling and connection platform that shines a light on youth changemakers often excluded from mainstream narratives and communities where youth are most marginalized. Beyond recognition, each spotlight is followed by efforts to connect featured youth or communities with tailored opportunity leads, resources, and networks.",
       features: ["Youth Stories", "Opportunity Leads", "Network Building"]
     },
     {
-      icon: Target,
+      icon: BrainCircuit,
       title: "Vidi Youth AI",
       description: "Vidi Youth AI is a digital career support tool built around clarity and meaning. It helps young people discover their purpose, align their strengths and interests, and navigate personalized pathways toward learning, work, or income opportunities. [Coming Soon]",
       features: ["Career Discovery", "Personalized Pathways", "Purpose Alignment"]
@@ -52,31 +52,38 @@ const ProgramsSection = () => {
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-2 bg-white border-0"
+                className="group relative overflow-hidden bg-white border-0 shadow-elegant hover:shadow-2xl transition-all duration-500 hover:-translate-y-3"
               >
-                <CardContent className="p-8 text-center">
+                {/* Background Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-primary-glow/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <CardContent className="relative p-8 text-center">
                   {/* Icon */}
-                  <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="h-8 w-8 text-white" />
+                  <div className="relative w-24 h-24 mx-auto mb-6">
+                    <div className="absolute inset-0 bg-gradient-primary rounded-2xl shadow-elegant blur-lg group-hover:blur-xl transition-all duration-500"></div>
+                    <div className="relative w-full h-full bg-gradient-primary rounded-2xl flex items-center justify-center shadow-primary border border-white/40 group-hover:scale-110 transition-all duration-500">
+                      <IconComponent className="h-12 w-12 text-white drop-shadow-xl filter" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent rounded-2xl"></div>
+                    </div>
                   </div>
                   
                   {/* Content */}
-                  <h3 className="font-heading font-semibold text-xl text-foreground mb-4">
+                  <h3 className="font-heading font-bold text-xl text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
                     {program.title}
                   </h3>
-                  <p className="text-body-text mb-6 leading-relaxed">
+                  <p className="text-body-text mb-6 leading-relaxed text-sm">
                     {program.description}
                   </p>
                   
                   {/* Features */}
-                  <ul className="space-y-2">
+                  <div className="space-y-3">
                     {program.features.map((feature, idx) => (
-                      <li key={idx} className="text-sm text-body-text flex items-center justify-center">
-                        <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>
-                        {feature}
-                      </li>
+                      <div key={idx} className="flex items-center justify-center p-3 bg-gradient-to-r from-primary-green/15 to-primary-blue/15 rounded-lg border border-primary/30 shadow-card">
+                        <div className="w-2 h-2 bg-gradient-primary rounded-full mr-3 shadow-primary"></div>
+                        <span className="text-sm font-semibold text-foreground">{feature}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </CardContent>
               </Card>
             );
